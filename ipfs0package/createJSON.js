@@ -2,7 +2,7 @@ function createJSON(data,nameFile, success, fail) {
     const fs = require('fs');
     fs.writeFile(nameFile, JSON.stringify(data), function(error) {
       if(error) { 
-        console.log('[Writing  '+ namefile + ']: ' + err);
+        console.log('[write auth]: ' + err);
           if (fail)
             fail(error);
       } else {

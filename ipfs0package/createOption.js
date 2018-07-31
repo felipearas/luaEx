@@ -13,6 +13,9 @@ class Option {
     set strike(strike) {
       this._strike = strike;
     }
+    confirmOption() {
+      console.log(this);
+    }
   }
   
 
